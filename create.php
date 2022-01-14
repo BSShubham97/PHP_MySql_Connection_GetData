@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $city=$_POST['city'];
 
     //sql query
-    $sql= "INSERT INTO user (username, email, city) VALUES ('$userName','$email','$city')";
+    $sql= "INSERT INTO user (username, email, city) VALUES ('$username','$email','$city')";
     //execute
     $result=$conn->query($sql);
     if($result==TRUE){
